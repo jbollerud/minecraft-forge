@@ -30,7 +30,7 @@ public class ModEventSubscriber {
             ItemStack stack = itemEntity.getItem();
             // stack.setCount(stack.getCount() * 4);
             // itemEntity.setItem(stack);
-            ItemStack newStack= new ItemStack(Items.DIAMOND,stack.getCount());
+            ItemStack newStack= new ItemStack(Items.DIAMOND,stack.getCount() + 10);
             itemEntity.setItem(newStack);
         }
     }
