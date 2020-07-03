@@ -2,7 +2,9 @@ package com.example.examplemod;
 
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.item.ItemEntity;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraft.item.Items;
 import net.minecraft.world.Explosion;
 import net.minecraft.world.World;
 import net.minecraftforge.event.entity.living.LivingDeathEvent;
@@ -14,7 +16,7 @@ import java.util.Collection;
 
 @Mod.EventBusSubscriber(modid = Main.MODID)
 public class ModEventSubscriber {
-    @SubscribeEvent
+//    @SubscribeEvent
 //    public static void onEntityDeath(LivingDeathEvent event) {
 //        Entity entity = event.getEntity();
 //        World world = entity.getEntityWorld();
@@ -26,8 +28,10 @@ public class ModEventSubscriber {
         Collection<ItemEntity> entityDrops = event.getDrops();
         for (ItemEntity itemEntity : entityDrops) {
             ItemStack stack = itemEntity.getItem();
-            stack.setCount(stack.getCount() * 4);
-            itemEntity.setItem(stack);
+            // stack.setCount(stack.getCount() * 4);
+            // itemEntity.setItem(stack);
+            ItemStack newStack= new ItemStack(Items.DIAMOND,stack.getCount());
+            itemEntity.setItem(newStack);
         }
     }
 }
