@@ -1,3 +1,5 @@
 {
-  "item.epicmod.epic_ingot": "Epic Ingot"
+  "item.epicmod.epic_ingot": "Epic Ingot",
+
+  "ItemGroup.epicmod": "Epic Mod"
 }

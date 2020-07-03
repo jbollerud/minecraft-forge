@@ -1,5 +1,6 @@
 package com.example.examplemod;
 
+import com.example.examplemod.item.ModItemGroups;
 import net.minecraft.item.Item;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.event.RegistryEvent;
@@ -12,7 +13,7 @@ public class ModSetupEventSubscriber {
     @SubscribeEvent
     public static void onRegisterItems(RegistryEvent.Register<Item> event) {
         event.getRegistry().registerAll(
-                setup(new Item(new Item.Properties()), "epic_ingot")
+                setup(new Item(getModItemProperties()), "epic_ingot")
         );
     }
 
@@ -24,4 +25,11 @@ public class ModSetupEventSubscriber {
         entry.setRegistryName(registryName);
         return entry;
     }
+
+    public static Item.Properties getModItemProperties() {
+        return new Item.Properties().group(ModItemGroups.EPIC_ITEM_GROUP);
+    }
 }
+
+
+
