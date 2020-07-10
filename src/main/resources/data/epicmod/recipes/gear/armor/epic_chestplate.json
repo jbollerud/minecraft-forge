@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "i i",
+    "iii",
+    "iii"
+  ],
+  "key": {
+    "i": {
+      "item": "epicmod:epic_ingot"
+    }
+  },
+  "result": {
+    "item": "epicmod:epic_chestplate",
+    "count": 1
+  }
+}

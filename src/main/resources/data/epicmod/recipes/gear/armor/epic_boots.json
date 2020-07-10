@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "i i",
+    "i i"
+  ],
+  "key": {
+    "i": {
+      "item": "epicmod:epic_ingot"
+    }
+  },
+  "result": {
+    "item": "epicmod:epic_boots",
+    "count": 1
+  }
+}

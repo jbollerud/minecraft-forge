@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ii",
+    "is",
+    " s"
+  ],
+  "key": {
+    "s": {
+      "item": "minecraft:stick"
+    },
+    "i": {
+      "item": "epicmod:epic_ingot"
+    }
+  },
+  "result": {
+    "item": "epicmod:epic_axe",
+    "count": 1
+  }
+}

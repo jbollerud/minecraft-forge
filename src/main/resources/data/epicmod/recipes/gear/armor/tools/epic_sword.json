@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "i",
+    "i",
+    "s"
+  ],
+  "key": {
+    "s": {
+      "item": "minecraft:stick"
+    },
+    "i": {
+      "item": "epicmod:epic_ingot"
+    }
+  },
+  "result": {
+    "item": "epicmod:epic_sword",
+    "count": 1
+  }
+}
