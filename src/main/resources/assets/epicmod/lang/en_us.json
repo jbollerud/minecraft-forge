@@ -2,6 +2,10 @@
   "item.epicmod.epic_ingot": "Epic Ingot",
 
   "Item epicmod.epic_sword": "Epic Sword",
+  "Item epicmod.epic_sword": "Epic Axe",
+  "Item epicmod.epic_sword": "Epic Pickaxe",
+  "Item epicmod.epic_sword": "Epic Shovel",
+  "Item epicmod.epic_sword": "Epic Hoe",
 
   "ItemGroup.epicmod": "Epic Mod"
 }
